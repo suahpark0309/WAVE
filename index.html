@@ -432,8 +432,8 @@
   }
   function validateInput(name, phone, dept) {
     if (!name || !phone || !dept) return "모든 항목을 입력해 주세요.";
-    let pattern = /^0\d{1,2}-\d{3,4}-\d{4}$/;
-    if (!pattern.test(phone)) return "전화번호 형식이 올바르지 않습니다. (예: 010-1234-5678)";
+    let pattern = /^0\d{1,2}\d{3,4}\d{4}$/;
+    if (!pattern.test(phone)) return "전화번호 형식이 올바르지 않습니다.";
     return "";
   }
   function updateUserInfo() {
